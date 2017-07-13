@@ -1,6 +1,6 @@
-var React = require('react');
+const React = require('react');
 
-var Counter = ({
+const Counter = ({
   value,
   onIncrement,
   onDecrement
@@ -12,7 +12,7 @@ var Counter = ({
   </div>
 );
 
-var counter = (state = 0, action) => {
+const counter = (state = 0, action) => {
   switch (action.type) {
     case 'INCREMENT':
       return state + 1;
