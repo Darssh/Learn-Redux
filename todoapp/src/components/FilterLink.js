@@ -1,17 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
-
-
-const setVisibilityFilter = (filter) => ({
-  type: 'SET_VISIBILITY_FILTER',
-  filter
-});
-
-const Link = ({
-	active,
-	children,
-	onClick
-}) => {
+import { setVisibilityFilter } from '../actions';
+ 
+const Link = ({ active, children, onClick }) => {
 	if (active) {
 		return <span>{children}</span>
 	}
